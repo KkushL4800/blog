@@ -1,0 +1,13 @@
+<div id="page_wrapper">
+<h1><%=@post.title%></h1>
+<p><h2><%= @post.content%></h2></p>
+
+<br>
+	<div id="comments">
+		<h2><%= @post.comments.count %> Comments</h2>
+		<hr>
+		<%= render @post.comments %>
+		<h3>Add a comment:</h3>
+		<%= render "comments/form" %>
+	</div>
+</div>
