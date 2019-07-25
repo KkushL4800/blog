@@ -19,7 +19,7 @@
 
 html, body {
 	font-family: 'Raleway', sans-serif;
-	background:  #F8FADB;
+	background:  #D7DAD7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,7 +40,7 @@ a {
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #BFF1FA;
+	background: #258F61;
 	padding: 7em 0 0 0;
 	border-right: 1px solid #27489E;
 	#logo {
@@ -57,12 +57,12 @@ a {
 			font-weight: 700;
 			font-size: 1.3em;
 			text-transform: uppercase;
-			color: #33acb7;
+			color: black;
 		}
 		li {
 			padding: .5em 0;
 			a {
-				color: #081022;
+				color: white;
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
@@ -114,8 +114,8 @@ a {
 	#header {
 		padding: 1em 3em;
 		border-bottom: 1px solid #27489E;
-		background: #A9ECF9;
-		color: #0A230A;
+		background: #258F61;
+		color: white;
 		p {
 			display: inline;
             font-size: 1em;
