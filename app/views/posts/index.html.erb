@@ -3,11 +3,14 @@
   <h1><%= link_to post.title, post %></h1>
   <h2><%=post.created_at%></h2>
   
-  <p style="color: darkgreen;">
+ 
+  <p style="color: #F70025;">
+ <%if user_signed_in? && post.user==current_user%>
   <%=link_to "Edit", edit_post_path(post)%> |
   <%=link_to "Delete",post, :confirm => "Are u sure?", :method => :delete %>
-
+ <%end%>
   </p>
+  
   <hr/>
   <%end%>
 

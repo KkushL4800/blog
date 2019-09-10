@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 h1{
-	color:blue;
+	color:#258039;
 }
 
 a {
@@ -40,7 +40,7 @@ a {
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #258F61;
+	background: linear-gradient(to right, #C9A66B 0%, #80BD9E 100%);
 	padding: 7em 0 0 0;
 	border-right: 1px solid #27489E;
 	#logo {
@@ -62,7 +62,8 @@ a {
 		li {
 			padding: .5em 0;
 			a {
-				color: white;
+				color: #283655;
+				font-size: 1.5em;
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
@@ -114,20 +115,21 @@ a {
 	#header {
 		padding: 1em 3em;
 		border-bottom: 1px solid #27489E;
-		background: #258F61;
+		background: #ACD0C0;
 		color: white;
 		p {
 			display: inline;
             font-size: 1em;
 		}
 		a {
-			color: #033810;
+			color: WHITE;
 			text-decoration: none;
 		}
 		.buttons {
 			float: right;
 			margin-top: -6px;
 			.button {
+			     background:#B38867;
 				font-size: 1em;
 				margin-left: .5em;
 			}

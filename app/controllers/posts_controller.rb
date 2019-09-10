@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
 before_action :authenticate_user!, except: [:index, :show]
 
+
 	def index
 		@posts=Post.all
 	end
@@ -11,6 +12,7 @@ before_action :authenticate_user!, except: [:index, :show]
 
 	def create
 		@post=Post.new(post_params)
+		@post.user_id=current_user.id
 		
 		if @post.save
 			redirect_to posts_path, :notice => "Your post was saved"
@@ -49,5 +51,7 @@ before_action :authenticate_user!, except: [:index, :show]
     def post_params
      params.require(:post).permit!
     end
+
+    
 
 end
