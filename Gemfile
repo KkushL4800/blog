@@ -7,6 +7,15 @@ ruby '2.5.3'
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 
+group :production do
+  gem 'pg'
+end
+
+
+group :development do
+  gem 'sqlite3'
+end
+
 gem 'devise'
 
 
@@ -65,10 +74,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-group :development do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+
 
